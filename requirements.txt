@@ -9,7 +9,6 @@ beautifulsoup4==4.12.2
 bitarray==2.8.2
 bitstring==4.1.2
 bleach==4.0.0
-cargo>=1.0
 cachetools==5.2.1
 certifi==2022.12.7
 cffi==1.14.6
