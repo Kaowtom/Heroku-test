@@ -1,11 +1,11 @@
-from dash import Dash, html
+from flask import Flask, render_template
+from dash import html
 
-app = Dash(__name__)
+app = Flask(__name__)
 
-# Define your layout
-app.layout = html.Div("Hello Dash!")
+@app.route('/')
+def home():
+    return html.Div("Hello Flask!")
 
-# Run the app
-if __name__ == "__main__":
-    # Use the server attribute to configure the server
-    app.server.run(debug=False, port=int(os.environ.get("PORT", 8080)))
+if __name__ == '__main__':
+    app.run(debug=True)
