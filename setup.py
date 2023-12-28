@@ -1216,4 +1216,4 @@ def update_layout(layout_value):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=True)
