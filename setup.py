@@ -1217,4 +1217,4 @@ def update_layout(layout_value):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=False, port=int(os.environ.get("PORT", 8080)))
+    app.server.run(debug=False, port=int(os.environ.get("PORT", 8080)))
